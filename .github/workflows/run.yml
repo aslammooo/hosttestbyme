@@ -27,7 +27,7 @@ jobs:
 
       - name: Run script with time limit
         run: |
-          timeout 20700 python main.py || true
+          timeout 20700 python mybota.py || true
 
       - name: Trigger next run (restart chain)
         if: always()
